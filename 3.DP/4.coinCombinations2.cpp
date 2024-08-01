@@ -2,12 +2,11 @@
 using namespace std;
 #define mod 1000000007
 
-int main()
-{
+int main() {
     int n, x;
     cin >> n >> x;
     vector<int> coins(n);
-    for (int &i : coins)
+    for (int& i : coins)
     {
         cin >> i;
     }

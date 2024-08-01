@@ -2,15 +2,14 @@
 using namespace std;
 #define mod 1000000007
 
-int solve(int target, vector<int> &coins, vector<int> &dp)
-{
+int solve(int target, vector<int>& coins, vector<int>& dp) {
     if (target == 0)
         return 1;
     if (dp[target] != -1)
         return dp[target];
 
     int ways = 0;
-    for (int &val : coins)
+    for (int& val : coins)
     {
         if (target - val >= 0)
         {
@@ -19,12 +18,11 @@ int solve(int target, vector<int> &coins, vector<int> &dp)
     }
     return dp[target] = ways % mod;
 }
-int main()
-{
+int main() {
     int n, x;
     cin >> n >> x;
     vector<int> coins(n);
-    for (int &i : coins)
+    for (int& i : coins)
     {
         cin >> i;
     }

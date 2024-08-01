@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int solve(int target, vector<int> &coins, vector<int> &dp)
-{
+int solve(int target, vector<int>& coins, vector<int>& dp) {
     if (target == 0)
         return 0;
 
@@ -19,8 +18,7 @@ int solve(int target, vector<int> &coins, vector<int> &dp)
     }
     return dp[target] = ways + 1;
 }
-int main()
-{
+int main() {
     int n, x;
     cin >> n >> x;
     vector<int> coins;
