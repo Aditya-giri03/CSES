@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
+int main() {
     int n;
     cin >> n;
 
@@ -12,8 +11,8 @@ int main()
     {
         int enter, exit;
         cin >> enter >> exit;
-        status.push_back({enter, 1});
-        status.push_back({exit, -1});
+        status.push_back({ enter, 1 });
+        status.push_back({ exit, -1 });
     }
 
     sort(status.begin(), status.end());

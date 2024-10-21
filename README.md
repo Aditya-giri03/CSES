@@ -1,2 +1,3 @@
 # CSES
-Solutions for the CSES problem set
+
+Solutions for the CSES Problem Set
