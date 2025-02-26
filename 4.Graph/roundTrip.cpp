@@ -34,12 +34,10 @@ int main() {
     bool found = false;
     for (int i = 1; i <= n; i++) {
         if (!vis[i]) {
-            // cycleNodes = {-1,-1};
             if (dfs(i, -1, g, vis, parent, cycleNodes)) {
                 found = true;
                 break;
             }
-
         }
     }
     if (!found) {

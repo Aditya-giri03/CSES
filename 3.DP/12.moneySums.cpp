@@ -11,7 +11,7 @@ int main() {
 
     dp[0] = 1;
     for (int v : value) { // iterating thru all values & using it to  make new sums from existing possible sums
-        for (int s = 1e5; s > 0; s--) {
+        for (int s = 1e5; s > 0; s--) { // iterating in rev bcox we want to consider only existing sums, not the sums marked possible now only due to v (would count contribution of v twice in this way)
             if (s - v >= 0 && dp[s - v] == 1) {
                 dp[s] = 1;
             }
